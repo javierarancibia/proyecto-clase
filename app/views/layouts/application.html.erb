@@ -8,53 +8,75 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body class="homepage is-preload">
+  <body class="no-sidebar is-preload">
 
-  <div id="header">
+  	<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
 
 					<!-- Inner -->
 						<div class="inner">
 							<header>
 								<h1><a href="index.html" id="logo">Helios</a></h1>
-								<hr />
-								<p>Another fine freebie by HTML5 UP</p>
 							</header>
-							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
-							</footer>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Dropdown</a>
-									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="#">And a submenu &hellip;</a>
-											<ul>
-												<li><a href="#">Lorem ipsum dolor</a></li>
-												<li><a href="#">Phasellus consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="left-sidebar.html">Index</a></li>
+								<li><a href="right-sidebar.html">Test</a></li>
+								<li><a href="no-sidebar.html">Login</a></li>
 							</ul>
 						</nav>
 
 				</div>
 
 
+				<%= yield %>
+			
+		
+				<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<hr />
+						<div class="row">
+							<div class="col-12">
+		
+								<!-- Contact -->
+									<section class="contact">
+										
+									
+									</section>
+		
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+		
+							</div>
+		
+						</div>
+					</div>
+				</div>
+		
+			</div>
+		
+					<!-- Scripts -->
+					<script src="assets/js/jquery.min.js"></script>
+					<script src="assets/js/jquery.dropotron.min.js"></script>
+					<script src="assets/js/jquery.scrolly.min.js"></script>
+					<script src="assets/js/jquery.scrollex.min.js"></script>
+					<script src="assets/js/browser.min.js"></script>
+					<script src="assets/js/breakpoints.min.js"></script>
+					<script src="assets/js/util.js"></script>
+					<script src="assets/js/main.js"></script>
+		
+		</body>
+		</html>
 
 
 
@@ -70,6 +92,9 @@
 
 
 
-    <%= yield %>
-  </body>
-</html>
+
+
+
+
+
+
