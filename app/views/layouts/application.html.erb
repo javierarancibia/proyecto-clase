@@ -24,15 +24,20 @@
 
 					<!-- Nav -->
 						<nav id="nav">
-							<ul>
-								<li><a href="left-sidebar.html">Index</a></li>
-								<li><a href="right-sidebar.html">Test</a></li>
-								<li><a href="no-sidebar.html">Login</a></li>
-							</ul>
+						<ul>
+						<li><a href="/">Home</a></li>
+						<li>
+						<%= link_to 'Test', pages_test_path %>
+							
+						</li>
+						<li><%= link_to 'Login', users_login_path %></li>
+						<li><%= link_to 'About Us', pages_aboutus_path %></li>
+						
+					</ul>
 						</nav>
 
 				</div>
-
+			
 
 				<%= yield %>
 			
